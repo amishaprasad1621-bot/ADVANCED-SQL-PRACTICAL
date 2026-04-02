@@ -1,0 +1,332 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMgOSzZlwqWKVPcdep6qb2I",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/amishaprasad1621-bot/ADVANCED-SQL-PRACTICAL/blob/main/Python%20Basics\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 10,
+      "metadata": {
+        "id": "G8njnhLQA5NI"
+      },
+      "outputs": [],
+      "source": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Question 1: What is Python and why is it widely used in Data Analytics? Mention any three reasons.\n",
+        "\n",
+        "--> Python is a popular programming language known for being easy to read and write. In Data Analytics, it is widely used because:\n",
+        "\n",
+        " 1.Simple Syntax: It uses English-like words, making it easy for beginners to learn.\n",
+        "\n",
+        " 2.Huge Libraries: It has special tools (like Pandas and NumPy) that make handling large amounts of data very fast.\n",
+        "\n",
+        " 3.Community Support: There is a massive community of users, so you can easily find help or pre-written code for almost any task.\n",
+        "\n",
+        "\n",
+        "Question 2: Explain the difference between List and Tuple in Python.\n",
+        "\n",
+        "--> List: You can change a list after creating it (add, remove, or edit items). It uses square brackets [].\n",
+        "\n",
+        "Tuple: You cannot change a tuple once it is made. It is \"fixed.\" It uses parentheses ()\n",
+        "\n",
+        "Question 3: What is a function in Python? Why are functions useful?\n",
+        "\n",
+        "--> A function is a block of code that only runs when you call it.\n",
+        "\n",
+        "Why they are useful: They help you avoid writing the same code over and over. You write the logic once and reuse it whenever you need it.\n"
+      ],
+      "metadata": {
+        "id": "QuY6RcXpBdL_"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Question 4: Write a Python program to take a user's name as input and print a greeting message."
+      ],
+      "metadata": {
+        "id": "A82dDJ2LCskQ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name = input(\"Enter your name: \")\n",
+        "print(\"Hello,\", name + \"! Welcome to Python.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "id": "b4-tdHelCls0",
+        "outputId": "309aa99d-4881-44a6-c66e-f8c2b0de9ac8"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter your name: Amisha\n",
+            "Hello, Amisha! Welcome to Python.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Question 5:Write a Python program to check whether a number is even or odd using conditional\n",
+        "statements."
+      ],
+      "metadata": {
+        "id": "jgGvku_BDDjO"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num = int(input(\"Enter a number: \"))\n",
+        "if num % 2 == 0:\n",
+        "    print(\"This is an Even number.\")\n",
+        "else:\n",
+        "    print(\"This is an Odd number.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "id": "W5YIPHtIDPAy",
+        "outputId": "5754c98b-b973-43c6-c250-37f662bea8d5"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number: 61\n",
+            "This is an Odd number.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Question 6 : Write a program to print numbers from 1 to 10 using a loop."
+      ],
+      "metadata": {
+        "id": "mGjcKK6lDTrc"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(1, 11):\n",
+        "    print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "id": "foWXEvdEDZye",
+        "outputId": "c97b3201-b67a-4e6c-eb16-66dc7003fc66"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n",
+            "7\n",
+            "8\n",
+            "9\n",
+            "10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Question 7 : Create a list of five numbers and print the maximum number from the list."
+      ],
+      "metadata": {
+        "id": "Gn1IEgBVDe12"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numbers = [10, 55, 2, 89, 30]\n",
+        "print(\"The maximum number is:\", max(numbers))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "id": "0xwf-CirDqsY",
+        "outputId": "33ee763a-454a-4778-9549-4ccbaf9a1b92"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "The maximum number is: 89\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Question 8 : Write a Python program to remove duplicate values from a list using a set."
+      ],
+      "metadata": {
+        "id": "yQzccH6BECeN"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_list = [1, 2, 2, 3, 4, 4, 5]\n",
+        "unique_list = list(set(my_list))\n",
+        "print(unique_list)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "id": "WaBzxUwsEHmY",
+        "outputId": "d9302386-ccc9-41ea-caae-97dd7c13837b"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1, 2, 3, 4, 5]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Question 9 : Write a function that returns the square of a number."
+      ],
+      "metadata": {
+        "id": "bV5cUnHJEYff"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def get_square(num):\n",
+        "    return num * num\n",
+        "\n",
+        "# Example use:\n",
+        "print(get_square(5)) # Output: 25"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "id": "HGcuXuTCEfBJ",
+        "outputId": "538da35a-e05a-4d9a-a47f-c55196276678"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "25\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Question 10 : Write a Python program to count how many times a number appears in a list.\n",
+        "\n",
+        "Example List\n",
+        "\n",
+        "[2,3,4,2,5,2]"
+      ],
+      "metadata": {
+        "id": "qtgaSdViEkbA"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "example_list = [2, 3, 4, 2, 5, 2]\n",
+        "target = 2\n",
+        "count = example_list.count(target)\n",
+        "print(\"The number\", target, \"appears\", count, \"times.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "id": "QQABLPsNEs6i",
+        "outputId": "720a688b-3ae5-4583-8cdf-c13913d311a4"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "The number 2 appears 3 times.\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
